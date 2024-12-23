@@ -10,3 +10,7 @@ Features :
     Interactive Quiz: A quiz to test your knowledge on Lean Management and DMAIC concepts.
     User-friendly Interface: Simple and intuitive interface to navigate through the content and take the quiz.
     Responsive Design: The web application is fully responsive and works seamlessly across various devices and screen sizes.
+Technologies Used :
+    HTML 
+    CSS
+    JavaScript
