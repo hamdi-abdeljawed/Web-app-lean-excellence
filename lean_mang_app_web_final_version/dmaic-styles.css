@@ -1,0 +1,296 @@
+/* DMAIC Page Styles */
+.dmaic-page {
+    background: var(--light-bg);
+}
+
+.dmaic-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.dmaic-container h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Image Sections */
+.image-section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    margin-top: 1rem;
+    color: var(--text-color);
+    font-style: italic;
+}
+
+/* DMAIC Phases */
+.dmaic-phases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.phase-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.phase-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.phase-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+}
+
+.phase-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: inherit;
+    opacity: 0.3;
+    animation: pulse 2s infinite;
+}
+
+.define .phase-icon { background: #FF6B6B; }
+.measure .phase-icon { background: #4ECDC4; }
+.analyze .phase-icon { background: #45B7D1; }
+.improve .phase-icon { background: #96CEB4; }
+.control .phase-icon { background: #FFEEAD; }
+
+/* Tools Section */
+.tools-section {
+    margin: 4rem 0;
+}
+
+.tools-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.tools-image, .method-image {
+    text-align: center;
+}
+
+.tools-img, .method-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tools-img:hover, .method-img:hover {
+    transform: scale(1.05);
+}
+
+/* Benefits Section */
+.key-benefits {
+    margin: 4rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.key-benefits h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.benefit-item h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.benefit-item p {
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Phase Details */
+.phase-details {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.phase-details li {
+    padding: 0.5rem 0;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+.phase-details li strong {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(1.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 0.3; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dmaic-container {
+        padding: 1rem;
+    }
+
+    .phase-card {
+        margin: 1rem 0;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Button Animations in index.html */
+.buttons-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cta-button {
+    position: relative;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    background: var(--primary-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.cta-button span {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-button i {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover i {
+    transform: translateX(5px);
+}
+
+.cta-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+.cta-button:hover::after {
+    left: 100%;
+}
+
+.dmaic-btn {
+    background: #4ECDC4;
+}
+
+.dmaic-btn:hover {
+    background: #45B7D1;
+}

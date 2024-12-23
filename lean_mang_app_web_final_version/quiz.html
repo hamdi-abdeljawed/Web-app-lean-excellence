@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Mesure Lean | Excellence Opérationnelle</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quiz-styles.css">
+</head>
+<body class="quiz-page">
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Lean Excellence</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Retour</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="quiz-container">
+        <h1 data-aos="fade-down">Quiz sur la Phase de Mesure</h1>
+        <div class="timer-container">
+            <div id="timer">10:00</div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <div class="quiz-content" data-aos="fade-up">
+            <div class="question-container">
+                <h2>Question <span class="question-number">1</span> sur 15</h2>
+                <p class="question-text"></p>
+                <div class="options-container"></div>
+            </div>
+
+            <div class="quiz-controls">
+                <button class="quiz-button previous" disabled>
+                    <i class="fas fa-arrow-left"></i> Précédent
+                </button>
+                <button class="quiz-button next">
+                    Suivant <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="quiz-button submit" style="display: none;">
+                    Soumettre <i class="fas fa-check"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="results-container" style="display: none;">
+            <h2>Résultats du Quiz</h2>
+            <div class="score-circle">
+                <span class="score">0</span>
+                <span class="total">/10</span>
+            </div>
+            <p class="result-message"></p>
+            <div class="result-actions">
+                <button class="quiz-button restart">
+                    <i class="fas fa-redo"></i> Recommencer
+                </button>
+                <a href="index.html" class="quiz-button return">
+                    <i class="fas fa-home"></i> Retour à l'accueil
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="quiz-script.js"></script>
+</body>
+</html>
