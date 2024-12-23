@@ -25,5 +25,5 @@ Usage
 
     Quiz Section: Test your knowledge on Lean Management and DMAIC by taking the quiz. The quiz consists of multiple-choice questions, and users receive feedback based on their answers.
 
-    Play the Quiz: You can test out the quiz and explore the entire web application by visiting the following link https://grand-starburst-c809c9.netlify.app/: Test the Web Application and Take the Quiz.
+    Play the Quiz: You can test out the quiz and explore the entire web application by visiting the following link "https://grand-starburst-c809c9.netlify.app/": Test the Web Application and Take the Quiz.
 Note: The quiz specifically focuses on the Measure phase of the DMAIC methodology.
